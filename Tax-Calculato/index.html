@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Tax Calculator</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <p>Tax-Calculator</p>
+      </div>
+      <div class="navlinks">
+        <a href="https://bit.ly/3GUBlH8"
+          ><img src="./assets/images/twitter.png" alt="twitter icon"
+        /></a>
+        <a href="https://bit.ly/3NWp9bb"
+          ><img src="./assets/images/linkedin.png" alt="linkedin icon"
+        /></a>
+      </div>
+    </header>
+    <div class="wrapper">
+      <div class="landpage">
+        <div class="columns">
+          <div class="column-1">
+            <div class="doing_math hide"></div>
+            <div class="row-1 first">
+              <div class="headings">
+                <div id="heading">
+                  <h1>CALCULATE THE PAYEE TAXABLE INCOME</h1>
+                  <h2>
+                    KNOW HOW YOUR INCOME IS TAXED TODAY. Tulipe ushuru
+                    tujitegemee😂🙄.
+                  </h2>
+                </div>
+              </div>
+              <div class="mail_holder">
+                <div class="news"><p>Get newsletters from us</p></div>
+                <div class="call_to_action">
+                  <input type="text" placeholder="Enter your email" />
+                  <button id="send">
+                    <img
+                      src="./assets/images/mail.png"
+                      alt="get emails image button"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column-2">
+            <div class="row-2 first">
+              <div class="calc_wrapper">
+                <div class="calculator">
+                  <div class="row-1">
+                    <div class="headbtns">
+                      <button
+                        id="monthly"
+                        style="margin-right: 7%; width: 100%"
+                        class="btn btn-primary btn-small"
+                      >
+                        Monthly
+                      </button>
+                      <button
+                        id="yearly"
+                        style="margin-right: 7%; width: 100%"
+                        class="btn btn-primary btn-small"
+                      >
+                        Yearly
+                      </button>
+                    </div>
+                  </div>
+                  <div class="row-2">
+                    <div class="inputs_holder">
+                      <div id="emptyfield" class="ef hide"></div>
+                      <div class="inputs">
+                        <input
+                          class="incomeinput"
+                          type="text"
+                          placeholder="Basic Salary"
+                        />
+                        <p>KES</p>
+                      </div>
+                      <div class="inputs">
+                        <input
+                          class="benefitsInput"
+                          type="text"
+                          placeholder="Benefits (B.S above 5999)"
+                        />
+                        <p>KES</p>
+                      </div>
+                      <div class="inputs">
+                        <input
+                          class="addBenefits"
+                          type="text"
+                          placeholder="Additional Benefits (B.S above 5999)"
+                        />
+                        <p>KES</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row-3">
+                    <div class="deductions">
+                      <p>Deduct NHIF</p>
+                      <div class="input_alert">
+                        <input type="checkbox" id="nhif" />
+                      </div>
+                    </div>
+                    <div class="deductions">
+                      <p>Deduct NSSF (200 OldRate)</p>
+                      <div class="input_alert">
+                        <div class="alert hide"></div>
+                        <input type="checkbox" id="nssf" />
+                      </div>
+                    </div>
+                    <div class="deductions">
+                      <p>NSSF Tiered Rates</p>
+                      <input type="checkbox" id="tiered_rate" />
+                    </div>
+                    <div class="deductions">
+                      <p>NSSF Old Rates</p>
+                      <input type="checkbox" id="old_rate" />
+                    </div>
+                  </div>
+                  <div class="row-4">
+                    <div class="calculate">
+                      <button
+                        id="calculate"
+                        style="margin-right: 7%"
+                        class="btn btn-primary btn-small"
+                      >
+                        Calculate
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bounce hide">
+              <div class="scroller">
+                <img src="./assets/images/arrow.png" alt="arrow down" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="output hide">
+        <h3>How Its Calculated</h3>
+        <div class="outputs_holder">
+          <div id="output">
+            <img src="./assets/images/down-arrow.png" alt="arrow down" />
+          </div>
+          <div id="display"></div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer">
+        <a href="https://github.com/P-Nth/Tax-Calculator"
+          ><p>Powered By P-Nth</p></a
+        >
+      </div>
+    </footer>
+
+    <script src="./assets/scripts/script.js"></script>
+  </body>
+</html>
